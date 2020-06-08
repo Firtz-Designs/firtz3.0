@@ -164,7 +164,7 @@ um dem Quorx3 Theme einen eigenen Look zu verpassen.
 
 Viel Spaß dabei!
 
--- Stand: 25.12.2019 by McCouman
+-- Stand: 08.06.2020 by McCouman
 
 
 ## Twitter Kontakte
