@@ -8,6 +8,7 @@ RC 3.0
 - fixed rendering for set: home.html,home-sidebar.html
 - change: classes/episode.php for summary output
 - change: new var "summary_xml"; for correct feed output in tag itunes:summary
+- change: take out strip_tags for better performance
 - new: summary is now enabled for markdown
 - update demo 001.epi file
 
