@@ -395,11 +395,11 @@ Ab der Version 2.9 (Beta) ist es möglich, einem Banner für deine Episode zu ve
 
 Ab der Version 2.9 (Beta) ist es möglich, auch Lizenzangaben für dein Intro oder outro zu vergeben. Dies kannst Du separiert angeben in der feed.cfg oder wenn Du jede Episode einen anderen Trailer oder Soundbeitrag verwendest.
 
-`    1         2                   3            4                           5`
-
-`SoundName, John Dow, https://www.domain.tld, CC BY, https://creativecommons.org/licenses/by/3.0/de/`
-
 <pre>
+    1         2                   3            4                           5
+SoundName, John Dow, https://www.domain.tld, CC BY, https://creativecommons.org/licenses/by/3.0/de/`
+
+Infos:
 1 = Angaben zum Namen des Sounds
 2 = MacherIn/ProduzentIn des Sounds
 3 = Website Link zur Person oder Sounds
