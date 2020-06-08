@@ -41,7 +41,7 @@ Change: M.C., 2019
 Aber fangen wir vorne an. Was brauchst Du? Du brauchst irgendwo Platz im Web.
 Das ist dann doch noch nötig. Dieser Platz im Web muss im Grunde nur eine
 Bedingung erfüllen: **php ab Version 5.4.0** muss ausgeführt werden können.
-Besser ist **php mit Version 3.7.x**. Datenbanken und anderen Kram braucht
+Besser ist **php mit Version 7.3.x**. Datenbanken und anderen Kram braucht
 es nicht, allerdings muss der ausführende Nutzer des Webservers in der Lage,
 Verzeichnisse zu erzeugen und Dateien in diese hineinzuschreiben.
 

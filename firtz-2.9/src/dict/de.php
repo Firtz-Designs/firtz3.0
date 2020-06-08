@@ -35,7 +35,7 @@ return array(
     
     //license
     'dict_license' => 'Lizenz',
-    'dict_lic_info' => 'Beachte Sie die Lizenzbestimmungen dieses Podcasts bevor Sie Inhalte weitergeben, einbinden oder gar verändern wollen. Die Einzelrechte an dieser Produktion unterliegen den jeweiligen Personen:',
+    'dict_lic_info' => 'Beachten Sie die Lizenzbestimmungen dieses Podcasts bevor Sie Inhalte weitergeben, einbinden oder gar verändern wollen. Die Einzelrechte an dieser Produktion unterliegen den jeweiligen Personen:',
     'dict_lic_end' => 'Produktion',
     'dict_epi_image' => 'Episoden Poster',
     'dict_epi_banner' => 'Episoden Banner',
