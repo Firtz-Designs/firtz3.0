@@ -360,11 +360,14 @@ Optional das Veröffentlichungsdatum der Episode in der Notation "YYYY-MM-DD HH:
 
 Wird ein Datum in der Zukunft (relativ zur Uhrzeit des Servers) gesetzt, wird die Episode ignoriert und erst nach Erreichen dieser Uhrzeit angezeigt.
  
-**description:**  
-Kurze Beschreibung der Episode, Subheadline
+**subtitle:**  
+Kurze Beschreibung der Episode. Dies dient als Untertitel (max. 255 Zeichen).
 
-**article:**  
-Ausführliche Beschreibung / Artikel zum Inhalt der Episode. Dieser Text wird auch im Player der Webseite angezeigt und darf markdown, aber nicht HTML enthalten. Das wirkt sich vor allem auf die Webseite aus, im Feed kann es an einigen Stellen dazu kommen, dass diese Auszeichnung verloren geht, z.B. bei iTunes:summary.  
+**summary**
+Kurze Einleitung zu deinem Podcast. Du kannst Markdown verwendenn, aber nicht HTML! (max. 4000 Zeichen).
+
+**shownotes**
+Ausführliche Shownotes oder Artikel zum Inhalt der Episode. Dieser Text wird auch im Player der Webseite angezeigt und darf Markdown, aber nicht HTML enthalten! Das wirkt sich vor allem auf die Webseite aus, im Feed kann es an einigen Stellen dazu kommen, dass diese Auszeichnung verloren geht, z.B. bei iTunes:summary.
 
 **keywords:**  
 Kommagetrennte Stichwörter, die den Inhalt der Episode beschreiben
@@ -524,7 +527,7 @@ Wenn Du aber, wie ich, zu den extrem faulen Zeitgenossen gehörst oder einfach e
 
 Ich sag's direkt: Wenn Du nicht ein wenig Erfahrung im Umgang mit Servern und *nix hast, wird das hier nicht so ganz einfach. Vielleicht kann Dir jemand dabei helfen? Fragen kostet nichts!
 
-####Was bei Auphonic getan werden muss
+#### Was bei Auphonic getan werden muss
 
 Zusätzlich zu den üblicherweise benötigten Daten in einer Auphonicproduktion, muss eine Production-Description weggeschrieben werden, die vom firtz erreicht werden kann. Aktiviere diese Ausgabedatei dort, wo Du auch die Audioformate des Presets/der Produktion angibst. Achte darauf, dass das Format .json ist.
 
@@ -536,7 +539,7 @@ Wenn Deine Podcasts also unter z.B. der URL http://media.supicast.de/001.m4a zu 
 
 Bis hierhin warst Du auf auphonic.com unterwegs. Wenden wir uns dem Kapitel zu, in dem es heißt:
 
-####Was bei Auphonic getan werden kann
+#### Was bei Auphonic getan werden kann
 
 Es kann Fälle geben, in denen Du voll automatisch über z.B. die auphonic-app in den firtz publizieren möchtest. Nun gibt es wiederum Attribute, die so aus der auphonic-Produktion nicht anständig heraus geholt werden können oder übersteuert werden sollen. 
 
@@ -548,7 +551,7 @@ Unterstrich, Name, Doppelpunkt, Inhalt. Das wäre es schon. So kannst Du z.B. ei
 
 _date:2014-12-31 20:15:00
 
-####Dem firtz erklären, wo auphonic den Most holt
+#### Dem firtz erklären, wo auphonic den Most holt
 
 Die im Abschnitt [Feed](#der-feed) erklärten Auphonic-Attribute sind von zentraler Bedeutung. Ich erwähne hier nur noch ein paar zusätzliche Kniffe und Bedingungen, die an erster Stelle etwas kurz gekommen sind.
 
