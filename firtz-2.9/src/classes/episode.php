@@ -85,23 +85,14 @@ class episode
         $item['pagelink'] = $main->get('BASEURL') . $feedattrs['slug'] . "/show/" . $slug;
         $item['slug'] = $slug;
         if ($item['guid'] == "") $item['guid'] = $feedattrs['slug'] . "-" . $item['slug'];
+        $item['subtitle'] = substr(strip_tags($item['subtitle']), 0, 255); #new: subtitle / 3 RC
 
-        //new: subtitle / 3 RC
-        $item['subtitle'] = substr(strip_tags($item['subtitle']), 0, 255);
-        $item['summary'] = substr(strip_tags($item['summary']), 0, 4000);
+        // change: output on page in markdown and no strips
+        // bug #1: find about gender* - https://github.com/Firtz-Designs/firtz3.0/issues/1
+        $item['summary'] = substr($this->markdown->text($item['summary']),0,4000); #1 rc 3.0 - v2.9.1
+        $item['summary_xml'] = substr(strip_tags($item['summary']), 0, 4000); #1 rc 3.0 - v2.9.1
         $item['shownotes_clean'] = $item['shownotes']; //editor clean
         $item['shownotes'] = $this->markdown->text($item['shownotes']);
-
-        //change:  / 3 RC
-        /*
-        if ($item['description']=="") $item['description'] = $item['article'];
-        $item['description'] =substr( strip_tags($item['description']),0,255);
-        $item['summary'] = substr(strip_tags($this->markdown->text($item['article'])),0,4000);
-        $item['flattrdescription'] = rawurlencode($item['description']);
-        $item['flattrkeywords'] = rawurlencode($item['keywords']);
-        $item['flattrlink'] = rawurlencode($item['pagelink']);
-        $item['flattrtitle'] = rawurlencode($item['title']);
-        */
 
         if ($item['image'] == "") $item['image'] = $feedattrs['image'];
 

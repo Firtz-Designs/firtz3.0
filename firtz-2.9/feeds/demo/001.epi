@@ -10,20 +10,23 @@ DC001: Episodentitel
 #: YYYY-MM-DD HH:mm:ss
 #:---------------------------------------------------------------------------------------------------
 date:
-2015-01-02 20:00:00
+2020-06-02 20:49:00
 
 #:---------------------------------------------------------------------------------------------------
-#: Untertitel
+#: Untertitel (max. 255 Zeichen)
 #:---------------------------------------------------------------------------------------------------
 subtitle:
 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 
 #:---------------------------------------------------------------------------------------------------
-#: Beschreibung
+#: Beschreibung (max. 4000 Zeichen)
 #:---------------------------------------------------------------------------------------------------
 summary:
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, Tester*in consetetu*r sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+
+labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 
 #:---------------------------------------------------------------------------------------------------
