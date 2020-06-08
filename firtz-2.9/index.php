@@ -1,5 +1,5 @@
 <?php
-# RC 2.8 Beta 2 | RC 3.0
+# RC 2.9.1 Beta | RC 3.0
 ini_set('auto_detect_line_endings', true);
 
 # Include
