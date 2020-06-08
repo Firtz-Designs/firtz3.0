@@ -311,13 +311,32 @@ Für die Variablen des QuorX 3 Templates, schaue bitte in die entsprechende Doku
 
 Muss ich nicht erklären, oder? Ok, für Dich: Dies ist der Titel der Episode.
 
-**description**
+**date**
+
+Optional das Veröffentlichungsdatum der Episode in der Notation `YYYY-MM-DD HH:MM:SS`. Wird das Datum weggelassen, erzeugt sich das Veröffentlichungsdatum aus dem Datum der letzten Änderung der Konfigurationsdatei.
+
+Wird ein Datum in der Zukunft (relativ zur Uhrzeit des Servers) gesetzt, wird die Episode ignoriert und erst nach Erreichen dieser Uhrzeit angezeigt.
+
+**subtitle**
 
 Fasse den Inhalt hier kurz zusammen. Kurz! 255 Zeichen maximal, sonst gibt's Ärger!
 
-**article**
+**summary**
+
+Eine kurze aber knackige Zusammenfassung zu deiner Episode. Du kannst hier Markdown verwenden. 
+Beachte die mindestanzahl von 4000 Zeichen.
+
+**shownotes**
 
 Und hier kannst Du dann ausführlicher werden. Aber übertreibe es auch wieder nicht und vor allem lass die Finger von HTML und Co. Hier gehört ausschließlich Markdown rein! Wie das funktioniert, erklärt Dir u.a. [Wikipedia](http://de.wikipedia.org/wiki/Markdown).
+
+**keywords**
+
+Gib hier eine sinnvolle, kommagetrennte Liste der Stichwörter für die Episode an. Der firtz hat übrigens eine Suchfunktion, die in diesen Stichwörtern sucht. Also sei schlau und nutze das sinnvoll.
+
+**duration**
+
+Gib hier die Dauer der Episode an. Nutze dafür bitte die Notation `HH:MM:SS`. Du kannst ggf. auch abkürzen mit `MM:SS`.
 
 **chapters**
 
@@ -325,29 +344,64 @@ Kapitel. Du willst Kapitel! Egal was die anderen sagen. Und auf die Amis hörst 
 
 `HH:MM:SS Kurze Beschreibung des Kapitels <optionaler link> <optional URL zu einem Kapitelbild>`
 
-**duration**
+**contributors**
 
-Gib hier die Dauer der Episode an. Nutze dafür bitte die Notation `HH:MM:SS`. Du kannst ggf. auch abkürzen mit `MM:SS`.
+Hast Du die extension unter `ext\contributors` installiert kannst Du deiner Episode, hinterlegte Nutzer hinzufügen.
+Die Erweiterung ist als Standard deklariert und bei einer Erstinstallation schon vorhanden. Weiteres findest Du auch direkt in der Readme Datei: https://github.com/Firtz-Designs/firtz3.0/blob/master/firtz-2.9/ext/contributors/README.md
 
-**keywords**
+Du kannst so ganz einfach deinen Mitwirkenden einbinden. Beachte die Lehrzeichen (ohne Komma!):
 
-Gib hier eine sinnvolle, kommagetrennte Liste der Stichwörter für die Episode an. Der firtz hat übrigens eine Suchfunktion, die in diesen Stichwörtern sucht. Also sei schlau und nutze das sinnvoll.
+`maxi maximusterfrau maxmustermann`
 
 **image**
 
-Wenn Du möchstest, kannst Du der Episode ein Bild verpassen. Gib dazu den kompletten Link an. Gibst Du das nicht an, wird das Logo des Podcasts aus dem Feed genutzt.
+Wenn Du möchstest, kannst Du der Episode ein Bild verpassen. Gib dazu den kompletten Link an. Gibst Du das nicht an, wird das Logo/Poster des Podcasts aus dem Feed genutzt.
 
-**date**
+`https://raw.githubusercontent.com/Firtz-Designs/firtz3.0/master/firtz-2.9/feeds/demo/001-cover.png`
 
-Optional das Veröffentlichungsdatum der Episode in der Notation `YYYY-MM-DD HH:MM:SS`. Wird das Datum weggelassen, erzeugt sich das Veröffentlichungsdatum aus dem Datum der letzten Änderung der Konfigurationsdatei.
+**banner**
 
-Wird ein Datum in der Zukunft (relativ zur Uhrzeit des Servers) gesetzt, wird die Episode ignoriert und erst nach Erreichen dieser Uhrzeit angezeigt.
+Ab der Version 2.9 (Beta) kannst Du nun auch einen Banner für jede Episode vergeben. Das macht deine Webseite interessanter.
+Möchtest Du das nicht, dann lasse die Part einfach weg :)
+
+`https://raw.githubusercontent.com/Firtz-Designs/firtz3.0/master/firtz-2.9/feeds/demo/001-banner.jpg`
+
+**bannerLicense**
+
+Ab der Version 2.9 (Beta) ist es möglich, einem verwendetem Banner auch eine Lizenzangabe zu geben. Dies macht nur Sinn, wenn Du natärlich einen Banner vergeben hast. Gebe hier den Namen der verwendeten Lizenz an, wenn Du nicht die Rechte besitzt, es jedoch unter einer Lizent verwenden darfst.
+
+`Free for all`
+
+**bannerPage**
+
+Ab der Version 2.9 (Beta) ist es möglich, einem Banner für deine Episode zu verwenden. Gebe hier den Linknamen der angezeigt werden soll. Er wird direkt mit der bannderURL verbunden und kann später angeklickt werden. Damit kannst Du auf die Lizenz hinweisen.
+
+`From www.Pexels.com by icon0.com`
+
+
+**bannerURL**
+
+Ab der Version 2.9 (Beta) ist es möglich, einem Banner für deine Episode zu verwenden. Gebe hier den Link zum Original an, um wo möglich rechtliche Probleme zu vermeiden.
+
+`https://www.pexels.com/de-de/foto/aussicht-baume-draussen-felsen-719609/`
+
+
+**intro**
+
+Ab der Version 2.9 (Beta) ist es möglich, auch Lizenzangaben für dein Intro oder outro zu vergeben. Dies kannst Du separiert angeben in der feed.cfg oder wenn Du jede Episode einen anderen Trailer oder Soundbeitrag verwendest.
+
+
+`    1         2                   3            4                           5`
+`SoundName, John Dow, https://www.domain.tld, CC BY, https://creativecommons.org/licenses/by/3.0/de/`
+
+# = Angaben des Soundnamens
+# = 
+
+
+outro:
+SoundName, John Dow, https://www.domain.tld, CC BY, https://creativecommons.org/licenses/by/3.0/de/
 
 **noaudio**
 
 Vielleicht passiert es einmal, dass Du einen Artikel auf der Webseite haben möchtest, der keine Episode Deines Podcasts ist. Du möchstest z.B. eine Urlaubspause verkünden. Dann gib hier `on` an, damit die entsprechende .epi-Datei nicht ignoriert wird.
-
-**location**
-
-tbw (to be written)
 
