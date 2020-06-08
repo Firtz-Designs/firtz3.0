@@ -3,6 +3,13 @@ Changelog:
 RC 3.0
 - i.A.
 
+2.9.1 Fix #1
+- fixed xml summary output with summary_xml
+- fixed rendering for set: home.html,home-sidebar.html
+- change: classes/episode.php for summary output
+- change: new var "summary_xml"; for correct feed output in tag itunes:summary
+- new: summary is now enabled for markdown
+- update demo 001.epi file
 
 2.9 Extensions and QuorX 3 changes
 - fixed PHP 7.2 and 7.3 changes (string to array)
