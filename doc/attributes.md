@@ -344,6 +344,7 @@ Kapitel. Du willst Kapitel! Egal was die anderen sagen. Und auf die Amis hörst 
 
 `HH:MM:SS Kurze Beschreibung des Kapitels <optionaler link> <optional URL zu einem Kapitelbild>`
 
+
 **contributors**
 
 Hast Du die extension unter `ext\contributors` installiert kannst Du deiner Episode, hinterlegte Nutzer hinzufügen.
@@ -353,11 +354,13 @@ Du kannst so ganz einfach deinen Mitwirkenden einbinden. Beachte die Lehrzeichen
 
 `maxi maximusterfrau maxmustermann`
 
+
 **image**
 
 Wenn Du möchstest, kannst Du der Episode ein Bild verpassen. Gib dazu den kompletten Link an. Gibst Du das nicht an, wird das Logo/Poster des Podcasts aus dem Feed genutzt.
 
 `https://raw.githubusercontent.com/Firtz-Designs/firtz3.0/master/firtz-2.9/feeds/demo/001-cover.png`
+
 
 **banner**
 
@@ -366,11 +369,13 @@ Möchtest Du das nicht, dann lasse die Part einfach weg :)
 
 `https://raw.githubusercontent.com/Firtz-Designs/firtz3.0/master/firtz-2.9/feeds/demo/001-banner.jpg`
 
+
 **bannerLicense**
 
 Ab der Version 2.9 (Beta) ist es möglich, einem verwendetem Banner auch eine Lizenzangabe zu geben. Dies macht nur Sinn, wenn Du natärlich einen Banner vergeben hast. Gebe hier den Namen der verwendeten Lizenz an, wenn Du nicht die Rechte besitzt, es jedoch unter einer Lizent verwenden darfst.
 
 `Free for all`
+
 
 **bannerPage**
 
@@ -386,20 +391,22 @@ Ab der Version 2.9 (Beta) ist es möglich, einem Banner für deine Episode zu ve
 `https://www.pexels.com/de-de/foto/aussicht-baume-draussen-felsen-719609/`
 
 
-**intro**
+**intro** und **outro**
 
 Ab der Version 2.9 (Beta) ist es möglich, auch Lizenzangaben für dein Intro oder outro zu vergeben. Dies kannst Du separiert angeben in der feed.cfg oder wenn Du jede Episode einen anderen Trailer oder Soundbeitrag verwendest.
 
-
 `    1         2                   3            4                           5`
+
 `SoundName, John Dow, https://www.domain.tld, CC BY, https://creativecommons.org/licenses/by/3.0/de/`
 
-# = Angaben des Soundnamens
-# = 
+<pre>
+1 = Angaben zum Namen des Sounds
+2 = MacherIn/ProduzentIn des Sounds
+3 = Website Link zur Person oder Sounds
+4 = Linzenz der Verwendung des Sounds
+5 = Angaben als Link zur verwendeten Lizenz
+</pre>
 
-
-outro:
-SoundName, John Dow, https://www.domain.tld, CC BY, https://creativecommons.org/licenses/by/3.0/de/
 
 **noaudio**
 
