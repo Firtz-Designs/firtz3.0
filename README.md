@@ -57,7 +57,7 @@ Zeile:  `AddHandler php5-cgi .php`
 Das sollte allerdings wirklich nur passieren, wenn der firtz diesbezüglich
 Fehlermeldungen auswirft.
 
-Change: M.C., 2019
+Change: M.C., 2020
 
 ## Los geht's
 
@@ -164,7 +164,7 @@ um dem Quorx3 Theme einen eigenen Look zu verpassen.
 
 Viel Spaß dabei!
 
--- Stand: 25.12.2019 by McCouman
+-- Stand: 08.06.2020 by McCouman
 
 
 ## Twitter Kontakte
