@@ -1,5 +1,5 @@
 <?php
-# RC 2.9.1 Beta | RC 3.0
+# RC 2.9.2 Beta | RC 3.0
 ini_set('auto_detect_line_endings', true);
 
 # Include
@@ -9,7 +9,7 @@ $main->set('DEBUG', 0);
 $main->set('CDURATION', 3600);
 
 $main->set('version', 2);
-$main->set('revision', 8);
+$main->set('revision', 9);
 $main->set('generator', 'firtz podcast publisher v' .
     $main->get('version') . "." .
     $main->get('revision') . " | QuorX 3");
@@ -105,7 +105,10 @@ $main->set('feedattr_default',
         'template',
         'templatevars',
         //project banner (ultraschall, podlove, studio&link)
-        'supporter'
+        'supporter',
+	//intro picense
+        'intro',            # 3.0 RC
+        'outro',            # 3.0 RC
     )
 );
 $main->set('itemattr',
