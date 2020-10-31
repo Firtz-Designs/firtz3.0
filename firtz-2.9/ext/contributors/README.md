@@ -11,13 +11,13 @@ Das ganze geht wie folgt:
 In der jeweiligen .cfg stehen dann die Daten der Nutzer:
 
 ```
-type:                                <- über den Typus kann festgelegt werden, ob es sich um die Teammitglieder handelt oder um einen Gast/Gästin
+type:             <- über den Typus kann festgelegt werden, ob es sich um die Teammitglieder handelt oder um einen Gast/Gästin
 team
 
-name:                                <- Name der Person mit Vor- und / oder Nachnamen (Dieser wird öffentlich angezeigt!)
+name:             <- Name der Person mit Vor- und / oder Nachnamen (Dieser wird öffentlich angezeigt!)
 Nachname Vorname
 
-description:                         <- Kurze Beschreibung zur Person, z.B.: Beruf oder Hobbyist (Bitte unbedingt kurz halten!)
+description:      <- Kurze Beschreibung zur Person, z.B.: Beruf oder Hobbyist (Bitte unbedingt kurz halten!)
 Podcaster
 
 image:
@@ -25,7 +25,7 @@ https://domain.tld/benutzername_400x400.png
 
 #: Netzwerke
 
-mail:                                <- Um Spam zu vermeiden solltest Du überlegen ob Du diese hier wirklich eingeben möchtest!
+mail:             <- Um Spam zu vermeiden solltest Du überlegen ob Du diese hier wirklich eingeben möchtest!
 mail@domain.tld
 
 mastodon:
