@@ -41,10 +41,10 @@
                 <h5 class="uk-h4 uk-margin-remove-bottom"><a class="uk-text-middle"
                       href="/{{@feedattr.slug}}/show/{{@item.slug}}"
                       name="{{@item.slug}}">{{@item.title}}</a></h5></br>
-                <b>{{@item.subtitle}}</b><br>
-                <p>
-                    {{@item.summary}}<br>
-                </p>
+                <b>{{@item.subtitle | raw}}</b><br>
+                
+                {{@item.summary | raw}}
+                
                 <check if="{{isset(@item.contributors_data)}}">
                     <repeat group="{{@item.contributors_data}}" value="{{@con}}"
                             key="{{@nick}}">
