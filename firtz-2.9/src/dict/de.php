@@ -2,6 +2,8 @@
 return array(
     //search
     'dict_searchtext' => 'Suche...',
+    'dict_search_h2' => 'Suche erfolglos :(',
+    'dict_search_msg' => 'Leider wurden keine Episode zu dieser Suchanfrage gefunden!',
 
     //breadcrumb
     'dict_navi_allepisodes' => 'Alle Episoden',
