@@ -1,9 +1,9 @@
 # firtz
 
 *firtz - podcast publisher*
-*Version 2.9.215 (Alpha)*
+*Version 2.09.0215 (Beta)*
 
-## Über firtz (RC 2.9.215)
+## Über firtz (RC 2.9)
 
 <pre>
 Du hast offensichtlich den Drang, entweder diesen Kram hier auszuprobieren,
