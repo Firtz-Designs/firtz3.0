@@ -1,6 +1,10 @@
 <?php
 return array(
+    
     'dict_searchtext' => 'Search',
+    'dict_search_h2' => 'Without success :(',
+    'dict_search_msg' => 'Unfortunately no episode was found!',
+    
     'dict_keywords' => 'keywords',
     'dict_subscribe' => 'subscribe',
     'dict_pubdate' => '{0,date}',
